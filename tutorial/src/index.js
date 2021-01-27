@@ -4,6 +4,9 @@ import ReactDom from "react-dom";
 // stateless functional component
 // always return JSX
 
+// **********JSX Rules ***********
+// 1. Always return a single element
+
 function Greeting() {
   return(
     <div>
