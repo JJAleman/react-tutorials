@@ -1,8 +1,19 @@
 import React from "react";
 
+// CSS
+import "./index.css"// CSS
+
 function Booklist() {
   return (
-    <section>
+    <section className="booklist">
+      <Book />
+      <Book />
+      <Book />
+      <Book />
+      <Book />
+      <Book />
+      <Book />
+      <Book />
       <Book />
     </section>
   );
@@ -10,7 +21,7 @@ function Booklist() {
 
 const Book = () => {
   return (
-    <article>
+    <article className="book">
       <Image />
       <Title />
       <Author />
