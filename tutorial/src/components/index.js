@@ -1,13 +1,17 @@
+import React from 'react'
 
-import React from 'react';
+// Nested Components, React Tools
 
-const index = () => {
+export default function Nested() {
     return (
         <div>
-            <h1>This will be a title</h1>
-           Hi from inside the component 
+            <Person />
+            <Message />
         </div>
-    );
+    )
 }
 
-export default index;
+const Person = () => <h2>John German</h2>;
+const Message = () => {
+    return <p>This is the message inside the component.</p>
+};

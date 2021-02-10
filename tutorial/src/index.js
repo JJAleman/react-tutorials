@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDom from "react-dom";
-// import Index from "./components/index"
-
+import Nested from "./components/index"
+import Booklist from "./pages/booklist"
 
 // stateless functional component
 // always return JSX
@@ -15,17 +15,18 @@ import ReactDom from "react-dom";
 // 6. formatting
 
 function Greeting() {
-  return(
-   <div >
-     <h3>hello people</h3>
-     <ul>
-       <li>
-         <a href="">hello world</a>
-       </li>
-     </ul>
-   </div>
-  )
-  
+  return (
+    <div>
+      <Nested />
+      <h3>hello people</h3>
+      <ul>
+        <li>
+          <a href="">hello world</a>
+        </li>
+      </ul>
+      <Booklist />
+    </div>
+  );
 }
 
 ReactDom.render(<Greeting />, document.getElementById("root"));
