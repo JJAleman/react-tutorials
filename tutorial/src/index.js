@@ -23,7 +23,7 @@ function Greeting() {
       <h3>hello people</h3>
       <ul>
         <li>
-          <a href="">hello world</a>
+          <a href="/">hello world</a>
         </li>
       </ul>
       <Booklist />

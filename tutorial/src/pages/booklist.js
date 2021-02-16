@@ -22,25 +22,21 @@ function Booklist() {
   );
 }
 
+const author = "Ann Whitford Paul"
+
 const Book = () => {
+  const title = "If Animals Kissed Good Night";
+
   return (
     <article className="book">
-      <Image />
-      <Title />
-      <Author />
+      <img
+        src="https://images-na.ssl-images-amazon.com/images/I/81nzxODnaJL._AC_UL200_SR200,200_.jpg"
+        alt=""
+      />
+      <h1>{title} </h1>
+      <h4>{author.toUpperCase()}</h4>
     </article>
   );
 };
-
-const Image = () => (
-  <img
-    src="https://images-na.ssl-images-amazon.com/images/I/81nzxODnaJL._AC_UL200_SR200,200_.jpg"
-    alt=""
-  />
-);
-
-const Title = () => <h1> If Animals Kissed Good Night </h1>;
-
-const Author = () => <h4 style={{color:'#617d98', fontSize:'0.75rem', margin:'0.25rem'}}> Ann Whitford Paul </h4>;
 
 export default Booklist;
