@@ -1,22 +1,24 @@
 import React from "react";
 
 // CSS
-import "./index.css"// CSS
+import "./index.css"; // CSS
 
 function Booklist() {
   return (
-    <section className="booklist">
+    <div>
       <h1>Book List</h1>
-      <Book />
-      <Book />
-      <Book />
-      <Book />
-      <Book />
-      <Book />
-      <Book />
-      <Book />
-      <Book />
-    </section>
+      <section className="booklist">
+        <Book />
+        <Book />
+        <Book />
+        <Book />
+        <Book />
+        <Book />
+        <Book />
+        <Book />
+        <Book />
+      </section>
+    </div>
   );
 }
 
@@ -39,6 +41,6 @@ const Image = () => (
 
 const Title = () => <h1> If Animals Kissed Good Night </h1>;
 
-const Author = () => <h4> Ann Whitford Paul </h4>;
+const Author = () => <h4 style={{color:'#617d98', fontSize:'0.75rem', margin:'0.25rem'}}> Ann Whitford Paul </h4>;
 
 export default Booklist;
