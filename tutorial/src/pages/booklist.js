@@ -43,7 +43,7 @@ function Booklist() {
   return (
     <div>
       <h1>Best Seller Book List</h1>
-      <p>Made by Juan</p>
+      <p>Made by Juan - Will return to this lecture!</p>
       <section className="booklist">
         {books.map((book) => {
           return (
